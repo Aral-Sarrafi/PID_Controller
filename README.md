@@ -8,14 +8,14 @@ This section discusses how the parameters are selected for the PID controller. F
 
 **P parameter:** P parameter plays a major role in this problem this parameter make the car to steer towards the center of the track. Increasing P makes the response of the car faster and it gets closer to the center with a steeper angle. However, Increasing P will introduce unwanted oscillations as expected because the car will over shoot after getting back to the center of the track. This problem can be solved by tuning the D parameter. Therefore; I selected P =0.1 after a couple of trial and error rounds. With P = 0.1 the car steers towards the center of the track and will be able to drive up to a certain point, but eventually the oscillations will occur and the system will become unstable.
 
-**In Summary: Increasing P parameter will make the system faster, introduces oscillations and more unstable.**
+**In Summary: Increasing P parameter will make the system faster but more unstable, and increases the overshoots.**
 
 <img src = "P.gif" align="center" >
 
 
 **D parameter:** In order to eliminate the overshoots tuning the D parameter is very important. The D parameter will take into account that the error has been decreased and decreases the amount of steering angle accordingly which will result in reducing the oscillations. Selecting larger values of D will decrease the oscillations even better, but selecting a very large value of will also increase the response time of the system. Increasing the response time of the system is not desired because the car will fail to make fast maneuvers especially in the turn. After couple of trial and error I selected D = 2.5 as the initial value of D. D = 2.5 will eliminate the oscillations while achieving a fast response time for the system.
 
-**In Summary: Increasing D parameter will make the system response slower, reduces the oscillations and overshooting and more stable.**
+**In Summary: Increasing D parameter will make the system response slower, but more stable, and reduces the overshoots.**
 
 <img src = "PD.gif" align="center" >
 
