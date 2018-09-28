@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/arals/Desktop/CarND-PID-Control-Project
+# Install script for directory: /mnt/c/Users/Aral_Sarrafi/Desktop/CarND-PID-Control-Project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/arals/Desktop/CarND-PID-Control-Project/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/Aral_Sarrafi/Desktop/CarND-PID-Control-Project/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -34,11 +34,17 @@ int main()
 
   PID pid;
   // TODO: Initialize the pid variable.
-  double Kp = 0.1;
-  double Kd = 2.5;
-  double Ki = 0.00001;
+  double Kp = 0.141;
+  double Kd = 3.8;
+  double Ki = 1.42e-05;
+
+  
+
 
   pid.Init(Kp, Ki, Kd);
+
+  //** Set twiddle On if you would like to optimize the PID parameters
+  pid.twiddle = false;
 
   h.onMessage([&pid](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode) {
     // "42" at the start of the message means there's a websocket message event.
