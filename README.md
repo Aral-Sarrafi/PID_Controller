@@ -41,3 +41,8 @@ After having a set of stable selection of parameters, twiddle method can be used
 
 **I = 1.42e-05**
 
+The clip below shows the performace of the optimized controller. As it clear the controller is able to handle sharp turn by producing a good steering angle for the front wheels.
+
+<img src = "PID.gif" align="center" >
+
+
